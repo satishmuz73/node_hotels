@@ -75,7 +75,7 @@ The *Person* data model represents information about staff members in the hotel.
     "salary": 30000
   }
 
-  ### MenuItem
+### MenuItem
 
 The *MenuItem* data model represents information about menu items available in the hotel.
 
