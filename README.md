@@ -51,3 +51,60 @@ The *Node Hotel application* is a Node.js-based system developed using the Expre
 ## Data Models
 
 ### Person
+
+The *Person* data model represents information about staff members in the hotel.
+
+- *Fields:*
+  - *name*: String - Person's name.
+  - *age*: Number - Person's age.
+  - *work*: Enum - Role in the hotel (e.g., chef, waiter, manager).
+  - *mobile*: String - Person's mobile number.
+  - *email*: String - Person's email address (unique).
+  - *address*: String - Person's address.
+  - *salary*: Number - Person's salary.
+
+- *Example:*
+  ```json
+  {
+    "name": "John Doe",
+    "age": 30,
+    "mobile": "123-456-7898",
+    "work": "waiter",
+    "email": "john@example.com",
+    "address": "123 Main Street",
+    "salary": 30000
+  }
+
+  ### MenuItem
+
+The *MenuItem* data model represents information about menu items available in the hotel.
+
+- *Fields:*
+  - *name*: String - Item's name.
+  - *price*: Number - Item's price.
+  - *taste*: Enum - Item's taste (e.g., sweet, spicy, sour).
+  - *is_drink*: Boolean - Indicates if the item is a drink (default is false).
+  - *ingredients*: Array of Strings - List of ingredients (default is an empty array).
+  - *num_sales*: Number - Number of sales for the item (default is 0).
+
+- *Example:*
+  ```json
+  {
+    "name": "Spicy Chicken Curry",
+    "price": 12.99,
+    "taste": "spicy",
+    "is_drink": false,
+    "ingredients": ["chicken", "spices", "vegetables"],
+    "num_sales": 50
+  }
+
+## Usage
+
+### 1. Install Dependencies:
+
+Before running the application, you need to install the necessary dependencies. Navigate to your project directory and run the following command:
+
+```bash
+npm install
+
+  
